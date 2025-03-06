@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+@theme{
+    --color-logo: Caveat "sans-serif";
+}
+
+*{
+    margin: 0px;
+    padding:  0px;
+}
+#root{
+    color: #ffffff;
+    background-color: #000005;
+}
+h1{
+    font-family: Caveat;
+}
+.app_style{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+@layer components{
+    .home_icon{
+        @apply w-12 h-12  text-gray-300 bg-gray-900 text-xl inline-flex items-center justify-center rounded-md hover:translate-y-1 hover:text-green-600 duration-300
+    }
+}
+
+.active{
+    color: #ffffff;
+}
