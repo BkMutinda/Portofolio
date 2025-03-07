@@ -25,10 +25,9 @@ const Home = () => {
       >
         <div className="section_div_1 w-1/2 flex flex-col gap-20">
           <div className="flex flex-col gap-3  ">
-            <h4>WELCOME TO MY WORLD</h4>
-            <h1 className="text-5xl font-bold text-white ">
-              Hello i am{" "}
-              <span className="text-orange-600 capitalize">
+            <h1 className="text-4xl font-bold text-white ">
+              Hello i am{" "} <br />
+              <span className="text-orange-600 capitalize font-Caveat" >
                 Bernard Mutinda
               </span>{" "}
             </h1>

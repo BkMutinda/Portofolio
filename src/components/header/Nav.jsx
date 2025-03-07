@@ -6,9 +6,9 @@ import { Link } from "react-scroll";
 const Nav = () => {
   return (
     <>
-      <div className="header_container sticky top-0 z-20 bg-black flex justify-around items-center  border-b-[1px] border-b-gray-200  ">
+      <div className="header_container sticky  z-20 bg-black flex justify-around items-center  border-b-[1px] border-b-gray-200  ">
         <div className="nav_main ">
-          <h1 className="text-gray-400 font-logo"> Mutinda</h1>
+          <h1 className="nav_h1 text-gray-400 font-logo text-6xl"> Mutinda</h1>
         </div>
         <div className="nav_menu">
           <ul className="inline-flex gap-15">

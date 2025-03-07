@@ -3,5 +3,9 @@
     padding: 0px;
 }
 .header_container{
-    height: 70px;
+    height: 80px;
+    top: 20px;
+}
+.nav_h1{
+    font-family: Caveat;
 }
