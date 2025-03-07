@@ -14,8 +14,8 @@ const Navlist = [
     },
     {
         _id: 1003,
-        title: "Skills",
-        link: "skills"
+        title: "Resume",
+        link: "resume"
     },
     {
         _id: 1004,
