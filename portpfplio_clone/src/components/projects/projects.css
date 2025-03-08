@@ -1,0 +1,10 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.projects_section{
+    padding: 10px 0px;
+}
+.project_cards{
+    gap: 10;
+}
