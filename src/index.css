@@ -26,7 +26,7 @@
         @apply w-12 h-12  text-gray-300 bg-gray-900 text-xl inline-flex items-center justify-center rounded-md hover:translate-y-1 hover:text-green-600 duration-300
     }
     .resume_li{
-        @apply  w-full bg-gray-900 text-xl flex justify-center cursor-pointer items-center duration-300 hover:bg-gray-700 rounded-none
+        @apply  w-full text-xl flex justify-center cursor-pointer items-center duration-300 hover:bg-gray-700 rounded-none
     }
 }
 

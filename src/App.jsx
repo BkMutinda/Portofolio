@@ -1,4 +1,6 @@
 import "./App.css";
+import Contact from "./components/contacts/Contact";
+import Footer from "./components/contacts/footer/footer";
 import About from "./components/header/About/About";
 import Home from "./components/header/Home/Home";
 import Nav from "./components/header/nav";
@@ -14,6 +16,8 @@ function App() {
         <About />
         <Projects />
         < Resume />
+        <Contact />
+        <Footer />
       </div>
     </>
   );
