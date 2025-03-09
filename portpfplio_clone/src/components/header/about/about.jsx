@@ -6,7 +6,7 @@ import { SiAntdesign, SiProgress } from "react-icons/si";
 import { FaComputer } from "react-icons/fa6";
 import Card from "./Card.jsx";
 
-const about = () => {
+const About = () => {
   return (
     <>
       <section
@@ -51,4 +51,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;
