@@ -30,4 +30,4 @@ const Navlist = [
     },
 
 ]
-export default Navlist
+export default Navlist;

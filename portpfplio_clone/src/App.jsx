@@ -3,9 +3,10 @@ import Contact from "./components/contacts/Contact"
 import Home from "./components/header/Home/Home";
 import Nav from "./components/header/Nav";
 import Projects from "./components/projects/project";
-import Resume from "./components/Resume/Resume";
+// import {About} from "./components/header/About/About"
 import About from "./components/header/About/About"
 import Footer from "./components/contacts/footer/Footer"
+import Resume from "./components/Resume/Resume"
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Home />
         <About />
         <Projects />
-        < Resume />
+        <Resume />
         <Contact />
         <Footer />
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import "./nav.css";
-import Navlist from "./constants/nav";
+import Navlist from "./constants/Listnav";
 import { Link } from "react-scroll";
 
 const Nav = () => {
