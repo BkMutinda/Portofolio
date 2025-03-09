@@ -1,11 +1,11 @@
 import "./App.css";
-import Contact from "./components/contacts/Contact";
-import Footer from "./components/contacts/footer/footer";
-import About from "./components/header/About/About";
-import Home from "./components/header/Home/Home";
-import Nav from "./components/header/nav";
-import Projects from "./components/projects/project";
-import Resume from "./components/Resume/Resume";
+import {Contact} from "./components/contacts/Contact"
+import {Home} from "./components/header/Home/Home";
+import {Nav} from "./components/header/Nav";
+import {Projects} from "./components/projects/project";
+import {Resume} from "./components/Resume/Resume";
+import {About} from "./components/header/About/About"
+import {Footer} from "./components/contacts/footer/Footer"
 
 function App() {
   return (
