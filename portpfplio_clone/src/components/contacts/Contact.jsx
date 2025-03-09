@@ -30,9 +30,6 @@ const Contact = () => {
 //     }
 //   };
 
-function alerting () {
-   alert("message sent successfully");
-}
 
   return (
     <section id="contacts">
@@ -113,7 +110,6 @@ function alerting () {
                 ></textarea>
                 <br />
                 <button
-                  onClick={alerting}
                   className="bg-gray-500 cursor-pointer hover:bg-gray-800 duration-300 rounded-md "
                   type="submit"
                 >
