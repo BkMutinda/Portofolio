@@ -25,9 +25,11 @@ const Contact = () => {
     }).then((res) => res.json());
 
     if (res.success) {
-      console.log("Success", res);
+      // alert("Message sent successfully");
+      // console.log("Success", res);
     }
   };
+
 
   return (
     <section id="contacts">
@@ -69,9 +71,12 @@ const Contact = () => {
                 action="https://api.web3forms.com/submit"
                 method="POST"
                 className="contact-form gap-2 flex flex-col  "
-                // onSubmit={onSubmit}
               >
-                <input name="access_key" />
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="417c7893-6527-45ed-8f68-884945763c0a"
+                />
                 <label htmlFor="name">Name</label>
                 <br />
                 <input
@@ -104,9 +109,10 @@ const Contact = () => {
                 ></textarea>
                 <br />
                 <button
-                  onSubmit={onSubmit}
                   className="bg-gray-500 cursor-pointer hover:bg-gray-800 duration-300 rounded-md "
                   type="submit"
+                  onSubmit={onSubmit}
+
                 >
                   Submit
                 </button>
