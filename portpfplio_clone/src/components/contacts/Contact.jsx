@@ -6,29 +6,29 @@ import { FaLocationPin } from "react-icons/fa6";
 import "./contact.css";
 
 const Contact = () => {
-//   const onSubmit = async (event) => {
-//     event.preventDefault();
-//     const formData = new FormData(event.target);
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
 
-//     formData.append("access_key", "417c7893-6527-45ed-8f68-884945763c0a");
+    formData.append("access_key", "417c7893-6527-45ed-8f68-884945763c0a");
 
-//     const object = Object.fromEntries(formData);
-//     const json = JSON.stringify(object);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
 
-//     const res = await fetch("https://api.web3forms.com/submit", {
-//       method: "POST",
-//       headers: {
-//         "Content-Type": "application/json",
-//         Accept: "application/json",
-//       },
-//       body: json,
-//     }).then((res) => res.json());
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
 
-//     if (res.success) {
-//       alert("Message sent successfully");
-//       // console.log("Success", res);
-//     }
-//   };
+    if (res.success) {
+      // alert("Message sent successfully");
+      // console.log("Success", res);
+    }
+  };
 
 
   return (
@@ -68,15 +68,14 @@ const Contact = () => {
           <div className="flex justify-center items-center ">
             <div className=" ">
               <form
-                // action="https://api.web3forms.com/submit"
-                // method="POST"
+                action="https://api.web3forms.com/submit"
+                method="POST"
                 className="contact-form gap-2 flex flex-col  "
-                // onSubmit={onSubmit}
               >
                 <input
                   type="hidden"
                   name="access_key"
-                  value="YOUR_ACCESS_KEY_HERE"
+                  value="417c7893-6527-45ed-8f68-884945763c0a"
                 />
                 <label htmlFor="name">Name</label>
                 <br />
@@ -112,6 +111,8 @@ const Contact = () => {
                 <button
                   className="bg-gray-500 cursor-pointer hover:bg-gray-800 duration-300 rounded-md "
                   type="submit"
+                  onSubmit={onSubmit}
+
                 >
                   Submit
                 </button>
