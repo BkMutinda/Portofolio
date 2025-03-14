@@ -73,6 +73,7 @@ const Contact = () => {
                 className="contact-form gap-2 flex flex-col  "
               >
                 <input
+                
                   type="hidden"
                   name="access_key"
                   value="417c7893-6527-45ed-8f68-884945763c0a"
@@ -80,6 +81,7 @@ const Contact = () => {
                 <label htmlFor="name">Name</label>
                 <br />
                 <input
+                id="message"
                   type="text"
                   placeholder="Enter Name"
                   autoFocus
@@ -90,6 +92,7 @@ const Contact = () => {
                 <label htmlFor="name">Email</label>
                 <br />
                 <input
+                id="message"
                   type="email"
                   placeholder="Enter Email"
                   required

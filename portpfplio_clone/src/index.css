@@ -33,3 +33,12 @@
 .active{
     color: #ffffff;
 }
+
+@media (width<350px) {
+    .app_style{
+        margin-left: 7px;
+        margin-right: 7px;
+
+    }
+    
+}

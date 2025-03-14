@@ -11,7 +11,7 @@ const Nav = () => {
           <h1 className="nav_h1 text-gray-400 font-logo text-6xl"> Mutinda</h1>
         </div>
         <div className="nav_menu">
-          <ul className="inline-flex gap-15">
+          <ul className="inline-flex gap-15 ">
             {Navlist.map(({ _id, title, link }) => (
               <li
                 className=" text-gray-400 tracking-wide cursor-pointer hover:text-white duration-200"
@@ -29,6 +29,7 @@ const Nav = () => {
                 </Link>
               </li>
             ))}
+            {/* <li>hello</li> */}
           </ul>
         </div>
       </div>
