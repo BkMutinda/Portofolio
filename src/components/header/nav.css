@@ -9,3 +9,12 @@
 .nav_h1{
     font-family: Caveat;
 }
+@media (width <= 370px) {
+    .header_container{
+        background-color: red;
+        display: block;
+    }
+    .nav_menu ul{
+        @apply block gap10 right-0
+    }
+}
