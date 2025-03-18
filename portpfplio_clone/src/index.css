@@ -11,7 +11,7 @@
     margin: 0px;
     padding:  0px;
 }
-#root{
+body{
     color: #ffffff;
     background-color: #000005;
 }
@@ -32,4 +32,13 @@
 
 .active{
     color: #ffffff;
+}
+
+@media (width<350px) {
+    .app_style{
+        margin-left: 7px;
+        margin-right: 7px;
+
+    }
+    
 }

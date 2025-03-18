@@ -11,7 +11,7 @@ import Resume from "./components/Resume/Resume"
 function App() {
   return (
     <>
-      <div className="app_style  ">
+      <div className="app_style sm:w-full ">
         <Nav />
         <Home />
         <About />

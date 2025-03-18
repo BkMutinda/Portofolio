@@ -8,4 +8,32 @@
 }
 .nav_h1{
     font-family: Caveat;
+    margin-left: 10px;
+}
+.menu{
+    padding: 10px;
+    padding-top: 150px;
+}
+.bars{
+    margin-right: 10px;
+}
+.x-mark{
+    padding: 20px;
+}
+li{
+    /* padding: 5px; */
+}
+@media (width <= 370px) {
+    /* .header_container{
+        background-color: red;
+        display: block;
+    }
+     */
+
+ }
+
+@media (370px <= width <=520px){
+    .header_container{
+        background-color: green;
+    }
 }
