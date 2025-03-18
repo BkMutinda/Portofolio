@@ -84,7 +84,6 @@ const Contact = () => {
                 id="message"
                   type="text"
                   placeholder="Enter Name"
-                  autoFocus
                   required
                   className="outline-none bg-gray-600 rounded-sm h-10 text-1xl"
                 />
