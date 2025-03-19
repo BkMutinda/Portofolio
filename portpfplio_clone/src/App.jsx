@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <div className="app_style sm:w-full ">
-        <Nav />
+        <Nav  />
         <Home />
         <About />
         <Projects />

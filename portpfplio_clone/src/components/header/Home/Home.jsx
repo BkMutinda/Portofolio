@@ -12,26 +12,30 @@ const Home = () => {
       "Cybersecurity Analyst.",
     ],
     loop: true,
-    typeSpeed: 100,
+    typeSpeed: 30,
     deleteSpeed: 50,
-    delaySpeed: 2000,
+    delaySpeed: 1000,
   });
+
+  const MyLinkedIn = () => {
+    window.open('https://www.linkedin.com/in/bernard-mutinda-9869b8293/',  'nopener noreferer');
+  }
 
   return (
     <>
       <section
         id="home"
-        className="Banner_style border-b-[1px] border-b-[gray]  items-center flex  "
+        className="Banner_style border-b-[1px] border-b-[gray]    "
       >
-        <div className="section_div_1 w-1/2 flex flex-col gap-20">
-          <div className="flex flex-col gap-3  ">
-            <h1 className="text-4xl font-bold text-white ">
-              Hello i am{" "} <br />
-              <span className="text-orange-600 capitalize font-Caveat" >
+        <div className="section_div_1 flex flex-col ">
+          <div className="flex flex-col ">
+            <h1 className="text-xl font-bold text-white ">
+              Hello i am {" "} <br />
+              <span className="text-orange-600 capitalize font-logo" >
                 Bernard Mutinda
-              </span>{" "}
+              </span>
             </h1>
-            <h2 className="text-4xl font-bold">
+            <h2 className="text-2xl font-bold">
               a <span>{text}</span>
               <Cursor
                 cursorBlinking={true}
@@ -39,7 +43,7 @@ const Home = () => {
                 cursorColor={"#0000ff"}
               />
             </h2>
-            <p>
+            <p className=" flex  " >
               A proefficient software developer using Javascript, TypeScript,
               Python, Php, Tailwindcss and Framer Motion. Commited to excelence
               and delivering creative problem-solving solutions. Currently open
@@ -50,7 +54,7 @@ const Home = () => {
             <p className=" find_me_icons uppercase ">Find Me</p>
               <div className="flex">
                 <span className="home_icon">
-                  <FaFacebook />
+                  <FaFacebook  />
                 </span>
                 <span className="home_icon">
                   <FaTwitter />
@@ -59,13 +63,12 @@ const Home = () => {
                   <FaInstagram />
                 </span>
                 <span className="home_icon">
-                  <FaLinkedin />
+                  <FaLinkedin onClick={MyLinkedIn} />
                 </span>
               </div>
           </div>
         </div>
-        <div className="w-1/2 bg-green-600">
-        </div>
+
       </section>
     </>
   );

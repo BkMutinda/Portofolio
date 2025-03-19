@@ -19,7 +19,7 @@ const project = () => {
         <div className="flex justify-center items-center text-center">
           <Tittle des="my projects" />
         </div>
-        <div className="grid grid-cols-3 gap-14">
+        <div className="grid grid-cols-1 gap-10">
           <ProjectCard
             tittle="Ecomerce websit"
             des="A nice looking and functioning eccomerce website made in react js, tailwindcss, framer motion, react icons, react smooth scroll"
