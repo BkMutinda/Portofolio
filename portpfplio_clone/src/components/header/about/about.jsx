@@ -14,7 +14,7 @@ const About = () => {
         className="about w-full text-White border-b-[1px] border-b-gray-600  "
       >
         <Tittle title="about" des="What i do" />
-        <div className="grid grid-cols-3 gap-20">
+        <div className="grid grid-cols-1 gap-20">
           <Card
             title="Bussiness strategy"
             des="this is the dexcription of the first box"

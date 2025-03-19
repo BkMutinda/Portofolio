@@ -17,11 +17,16 @@
 .bars{
     margin-right: 10px;
 }
-.x-mark{
-    padding: 20px;
+p{
+    margin-top: 20px;
+    padding: 10px;
 }
-li{
-    /* padding: 5px; */
+.link-item{
+    padding: 7px;
+}
+.side-menu-container{
+    margin-top: 100px;
+    padding-top: 20px;
 }
 @media (width <= 370px) {
     /* .header_container{

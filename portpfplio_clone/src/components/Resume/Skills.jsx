@@ -7,24 +7,23 @@ const Skills = () => {
     <div>
       <motion.div
 
-        className="flex  w-full gap-20 "
+        className="flex flex-col-1 w-full gap-20 "
       >
         <div className="w-1/2">
 
           <div className="resume_left">
-          <h2 className="text-4xl font-bold ">Development Skills</h2>
+          <h2 className="text-2xl font-semi-bold ">Development Skills</h2>
           </div>
           <div className="resume_data w-full flex flex-col gap-3 ">
             <div className="overflow-x-hidden">
               <p className="text-sm font-medium uppercase">html</p>
-              <span className="bg-gray-400 h-2 w-full rounded-md inline-flex">
+              <span className="bg-gray-700 h-2 w-full rounded-md inline-flex">
                 <motion.span
                   initial={{ x: "-100%", opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ duration: 1, delay: 0.5 }}
-                  className="w-[90%] h-full bg-gradient-to-r from-blue-500 via-gray-400 to-green-400 rounded-md relative"
+                  className="w-[90%] h-full bg-gradient-to-r from-gray-400 via-gray-800 to-gray-900 rounded-md relative"
                 >
-                  <span className="absolute -top-7 right-0">90%</span>
                 </motion.span>
               </span>
             </div>
@@ -37,7 +36,6 @@ const Skills = () => {
                   transition={{ duration: 1, delay: 0.5 }}
                   className="w-[70%] h-full bg-gradient-to-r from-blue-500 via-gray-400 to-green-400 rounded-md relative"
                 >
-                  <span className="absolute -top-8 right-0">70%</span>
                 </motion.span>
               </span>
             </div>
@@ -114,7 +112,7 @@ const Skills = () => {
             </div>
             <div className="overflow-x-hidden">
               <p className="text-sm font-medium uppercase">python</p>
-              <span className="bg-gray-400 h-2 w-full rounded-md inline-flex">
+              {/* <span className="bg-gray-400 h-2 w-full rounded-md inline-flex">
                 <motion.span
                   initial={{ x: "-100%", opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
@@ -123,7 +121,7 @@ const Skills = () => {
                 >
                   <span className="absolute -top-8 right-0">3%</span>
                 </motion.span>
-              </span>
+              </span> */}
             </div>
             <div className="overflow-x-hidden">
               <p className="text-sm font-medium uppercase">c</p>

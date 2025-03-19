@@ -44,7 +44,7 @@ const Resume = () => {
         <Tittle des="My Resume" />
       </div>
       <div>
-        <ul className="w-full grid grid-cols-4">
+        <ul className="w-full grid grid-cols-1">
           <li
             onClick={Edu}
             className={` hover:bg-gray-600 ${
@@ -88,10 +88,10 @@ const Resume = () => {
         </ul>
       </div>
 
-      {EducationData && <Education />}
+      {/* {EducationData && <Education />} */}
       {skillsData && <Skills />}
-      {experienceData && <Experience />}
-      {achievementsData && <Achievements />}
+      {/* {experienceData && <Experience />} */}
+      {/* {achievementsData && <Achievements />} */}
     </section>
   );
 };
