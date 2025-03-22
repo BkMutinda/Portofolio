@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+@theme{
+    --font-logo: Caveat "sans-serif";
+
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -11,4 +18,15 @@ textarea{
 button{
     width: fit-content;
     padding: 3px 15px;
+}
+.mail,
+.phone,
+.location{
+    margin-top: 5px;
+}
+li{
+    margin-top: 10px;
+}
+span{
+    margin-left: 5px;
 }

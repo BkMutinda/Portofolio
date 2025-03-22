@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import { Typewriter, Cursor, useTypewriter } from "react-simple-typewriter";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { link } from "framer-motion/client";
 
 const Home = () => {
   const [text] = useTypewriter({
@@ -17,9 +18,17 @@ const Home = () => {
     delaySpeed: 1000,
   });
 
-  const MyLinkedIn = () => {
-    window.open('https://www.linkedin.com/in/bernard-mutinda-9869b8293/',  'nopener noreferer');
-  }
+ const MyResume = () => {
+
+  var link= document.createElement('a');
+  link.href = 'file:///C:/Users/User/Desktop/BEN/MY%20DOCS/resume.pdf';
+  link.download = 'file:///C:/Users/User/Desktop/BEN/MY%20DOCS/resume.pdf';
+  link.click();
+
+    // window.open(
+    //   'file:///C:/Users/User/Desktop/BEN/MY%20DOCS/poeple/client/students/student1.pdf',
+    // );
+  };
 
   return (
     <>
@@ -30,8 +39,8 @@ const Home = () => {
         <div className="section_div_1 flex flex-col ">
           <div className="flex flex-col ">
             <h1 className="text-xl font-bold text-white ">
-              Hello i am {" "} <br />
-              <span className="text-orange-600 capitalize font-logo" >
+              Hello i am <br />
+              <span className="text-orange-600 capitalize font-logo">
                 Bernard Mutinda
               </span>
             </h1>
@@ -43,32 +52,22 @@ const Home = () => {
                 cursorColor={"#0000ff"}
               />
             </h2>
-            <p className=" flex  " >
+            <p className=" flex text-sm ">
               A proefficient software developer using Javascript, TypeScript,
               Python, Php, Tailwindcss and Framer Motion. Commited to excelence
               and delivering creative problem-solving solutions. Currently open
               to work.
             </p>
           </div>
-          <div className="">
-            <p className=" find_me_icons uppercase ">Find Me</p>
-              <div className="flex">
-                <span className="home_icon">
-                  <FaFacebook  />
-                </span>
-                <span className="home_icon">
-                  <FaTwitter />
-                </span>
-                <span className="home_icon">
-                  <FaInstagram />
-                </span>
-                <span className="home_icon">
-                  <FaLinkedin onClick={MyLinkedIn} />
-                </span>
-              </div>
+          <div className="home-footer">
+            <button
+              className="bg-orange-600 rounded-sm text-sm    "
+              onClick={MyResume}
+            >
+              Read Resume
+            </button>
           </div>
         </div>
-
       </section>
     </>
   );
