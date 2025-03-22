@@ -7,7 +7,7 @@ import "../../header/nav.css";
 const SideMenu = ({ closeSideBar }) => {
   return (
     <>
-      <div className="side-menu-container inline-block bg-gray-600  w-[200px]  " >
+      <div className="side-menu-container inline-block bg-gray-600  w-[200px]  ">
         <p className="text-3xl hover:cursor-pointer  ">
           <FaX
             onClick={closeSideBar}
@@ -21,7 +21,7 @@ const SideMenu = ({ closeSideBar }) => {
               key={_id}
             >
               <Link
-              className= "link-item    "
+                className="link-item    "
                 acticeclass="active"
                 to={link}
                 spy={true}
