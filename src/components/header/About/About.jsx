@@ -14,10 +14,10 @@ const About = () => {
         className="about w-full text-White border-b-[1px] border-b-gray-600  "
       >
         <Tittle title="about" des="What i do" />
-        <div className="grid grid-cols-3 gap-20">
+        <div className="grid grid-cols-3 gap-15">
           <Card
             title="Bussiness strategy"
-            des="this is the dexcription of the first box"
+            des="First description of what i do "
             icon={< FaBars />}
           />
           <Card
