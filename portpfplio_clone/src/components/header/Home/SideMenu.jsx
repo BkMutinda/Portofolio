@@ -3,25 +3,29 @@ import { Link } from "react-scroll";
 import { FaX } from "react-icons/fa6";
 import Navlist from "../constants/Listnav";
 import "../../header/nav.css";
+import { delay, motion } from "framer-motion";
+import { MdOutlinePrivateConnectivity } from "react-icons/md";
 
 const SideMenu = ({ closeSideBar }) => {
   return (
     <>
-      <div className="side-menu-container inline-block bg-gray-600  w-[200px]  ">
-        <p className="text-3xl hover:cursor-pointer  ">
+      <motion.div
+        initial={{ x: "50%", opacity: 0 }}
+        animate={{ x: "0", opacity: 1 }}
+        transition={{ duration: 0.4, delay: 0.2 }}
+        className="side-menu-container inline-block bg-gray-600  w-[200px]  "
+      >
+        <motion.p className="text-3xl hover:cursor-pointer  ">
           <FaX
             onClick={closeSideBar}
-            className="x-mark  text-white  hover:text-gray-400  "
+            className="x-mark  text-white hover:text-gray-400  "
           />
-        </p>
-        <ul className="block  sm:flex   sm:bg-amber-400  md:flex lg:flex xl:flex ">
+        </motion.p>
+        <ul className="block sm:flex sm:bg-amber-400  md:flex lg:flex xl:flex ">
           {Navlist.map(({ _id, title, link }) => (
-            <li
-              className="flex text-gray-400 hover:bg-gray-800   tracking-wide cursor-pointer hover:text-white duration-200  "
-              key={_id}
-            >
+            <motion.li key={_id}>
               <Link
-                className="link-item    "
+                className="link-item flex text-gray-400 hover:bg-gray-800   tracking-wide cursor-pointer hover:text-gray-500 duration-200     "
                 acticeclass="active"
                 to={link}
                 spy={true}
@@ -31,10 +35,10 @@ const SideMenu = ({ closeSideBar }) => {
               >
                 {title}
               </Link>
-            </li>
+            </motion.li>
           ))}
         </ul>
-      </div>
+      </motion.div>
     </>
   );
 };

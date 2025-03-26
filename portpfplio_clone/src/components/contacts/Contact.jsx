@@ -38,20 +38,17 @@ const Contact = () => {
         </div>
         <div className="w-full  ">
           <div className="flex flex-wrap ">
-            <div className="flex justify-center items-center text-center ">
-              <div className="contact_data flex flex-col w-[50%] justify-center items-center  ">
-                <p className="contact-p flex flex-col text-sm ">
-                  I'd like to hear a word from you on my Portofolio, resume,
-                  work.
+              <div className=" text-sm flex justify-center items-center text-center   ">
+                <p className="contact-p   ">
+                Your feedback is a appreciated.
                 </p>
 
               </div>
-            </div>
             <div className=" ">
                 <form
                   action="https://api.web3forms.com/submit"
                   method="POST"
-                  className="contact-form gap-2 flex flex-col  "
+                  className="contact-form gap-1 flex flex-col  "
                 >
                   <input
                     type="hidden"
@@ -64,7 +61,7 @@ const Contact = () => {
                     type="text"
                     placeholder="Enter Name"
                     required
-                    className="outline-none bg-gray-600 rounded-sm h-10 text-1xl"
+                    className="outline-none bg-gray-800 rounded-sm h-10 text-1xl"
                   />
                   <label htmlFor="name">Email</label>
                   <input
@@ -72,7 +69,8 @@ const Contact = () => {
                     type="email"
                     placeholder="Enter Email"
                     required
-                    className="outline-none bg-gray-600 rounded-sm h-10 text-1xl"
+                    className="outline-none bg-gray-800 rounded-sm h-10 text-1xl"
+                    target
                   />
                   <label htmlFor="message">Message</label>
                   <textarea
@@ -81,12 +79,12 @@ const Contact = () => {
                     placeholder="Enter message"
                     cols="30"
                     rows="10"
-                    className="outline-none bg-gray-600 rounded-sm"
+                    className="outline-none bg-gray-800 rounded-sm"
                     required
                   ></textarea>
                   <br />
                   <button
-                    className="bg-gray-500 cursor-pointer hover:bg-gray-800 duration-300 rounded-md  "
+                    className="bg-gray-700 cursor-pointer hover:bg-gray-800 duration-300 rounded-md  "
                     type="submit"
                     onSubmit={onSubmit}
                   >

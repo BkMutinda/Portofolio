@@ -5,6 +5,7 @@ import { Link } from "react-scroll";
 import { FaBars } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
 import SideMenu from "./Home/SideMenu";
+import { motion } from "framer-motion";
 
 const Nav = () => {
   const [SideBarMenu, setSideBarMenu] = useState(false);
@@ -26,10 +27,16 @@ const Nav = () => {
           </h1>
         </div>
 
-        <div className="block  ">
-          <FaBars className="bars text-3xl hover:cursor-pointer" onClick={openSideBar}  />
+        <motion.div
+
+          className="block  "
+        >
+          <FaBars
+            className="bars text-3xl hover:cursor-pointer"
+            onClick={openSideBar}
+          />
           {SideBarMenu && <SideMenu closeSideBar={closeSideBar} />}
-        </div>
+        </motion.div>
       </div>
     </>
   );

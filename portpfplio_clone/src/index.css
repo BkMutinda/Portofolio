@@ -42,3 +42,11 @@ body{
     }
     
 }
+@media (350px <= width <=520px){
+    .app_style{
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+}
+

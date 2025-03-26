@@ -11,13 +11,13 @@ const About = () => {
     <>
       <section
         id="about"
-        className="about w-full text-White border-b-[1px] border-b-gray-600  "
+        className=" w-full text-White border-b-[1px] border-b-gray-600  "
       >
         <Tittle title="about" des="What i do" />
-        <div className="grid grid-cols-1 gap-20">
+        <div className="grid grid-cols-1 gap-10">
           <Card
-            title="Bussiness strategy"
-            des="this is the dexcription of the first box"
+            title="Fullstack Webdevelopment"
+            des="versatile Fullstack webdeveloper "
             icon={<FaBars />}
           />
           <Card
@@ -36,14 +36,9 @@ const About = () => {
             icon={<FaServer />}
           />
           <Card
-            title="SEO "
+            title="Cyber Security Analyzing "
             des="this is the dexcription of the first box"
             icon={<SiProgress />}
-          />
-          <Card
-            title="Cyber Security"
-            des="this is the dexcription of the first box"
-            icon={<FaComputer />}
           />
         </div>
       </section>

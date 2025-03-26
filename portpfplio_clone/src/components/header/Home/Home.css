@@ -2,6 +2,10 @@
     margin: 0px;
     padding: 0px;
 }
+/* section{
+    padding: 0px;
+    margin: 0px;
+} */
 .Banner_style{
     margin-top: 30px;
     margin-bottom: 50px;
@@ -10,13 +14,7 @@
     margin-top: 50px;
     width: 1/2;
 }
-.find_me_icons{
-    margin-bottom: 10px;
-}
-.home_icon{
-    margin: 10px;
 
-}
 .home-footer{
     margin-bottom: 20px;
     margin-top: 10px;

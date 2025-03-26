@@ -19,15 +19,15 @@ const project = () => {
         <div className="flex justify-center items-center text-center">
           <Tittle des="my projects" />
         </div>
-        <div className="grid grid-cols-1 gap-10">
+        <div className="grid grid-cols-1 gap-5">
           <ProjectCard
-            tittle="Ecomerce websit"
-            des="A nice looking and functioning eccomerce website made in react js, tailwindcss, framer motion, react icons, react smooth scroll"
+            tittle="Single Webpage"
+            des="A nice looking simple html and css webpage"
             src={project1}
           />
           <ProjectCard
-            tittle="Ecomerce websit"
-            des="A nice looking and functioning eccomerce website made in react js, tailwindcss, framer motion, react icons, react smooth scroll"
+            tittle="Number System Converter"
+            des="A js system that converts input numbers to a variety of their equivalent forms."
             src={project2}
           />
           <ProjectCard
@@ -40,16 +40,7 @@ const project = () => {
             des="A nice looking and functioning eccomerce website made in react js, tailwindcss, framer motion, react icons, react smooth scroll"
             src={project4}
           />
-          <ProjectCard
-            tittle="Ecomerce websit"
-            des="A nice looking and functioning eccomerce website made in react js, tailwindcss, framer motion, react icons, react smooth scroll"
-            src={project5}
-          />
-          <ProjectCard
-            tittle="Ecomerce websit"
-            des="A nice looking and functioning eccomerce website made in react js, tailwindcss, framer motion, react icons, react smooth scroll"
-            src={project6}
-          />
+
         </div>
       </section>
     </>

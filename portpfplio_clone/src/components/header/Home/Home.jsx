@@ -1,8 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { Typewriter, Cursor, useTypewriter } from "react-simple-typewriter";
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { link } from "framer-motion/client";
+import Resume from "../../../../public/assets/resume.pdf"
 
 const Home = () => {
   const [text] = useTypewriter({
@@ -19,22 +18,14 @@ const Home = () => {
   });
 
  const MyResume = () => {
-
-  var link= document.createElement('a');
-  link.href = 'file:///C:/Users/User/Desktop/BEN/MY%20DOCS/resume.pdf';
-  link.download = 'file:///C:/Users/User/Desktop/BEN/MY%20DOCS/resume.pdf';
-  link.click();
-
-    // window.open(
-    //   'file:///C:/Users/User/Desktop/BEN/MY%20DOCS/poeple/client/students/student1.pdf',
-    // );
+  window.open(Resume)
   };
 
   return (
     <>
       <section
         id="home"
-        className="Banner_style border-b-[1px] border-b-[gray]    "
+        className="Banner_style border-b-[1px] border-b-[gray] "
       >
         <div className="section_div_1 flex flex-col ">
           <div className="flex flex-col ">
@@ -61,7 +52,7 @@ const Home = () => {
           </div>
           <div className="home-footer">
             <button
-              className="bg-orange-600 rounded-sm text-sm    "
+              className="bg-orange-600 rounded-sm text-sm  hover:bg-gray-700 duration-500 hover:cursor-pointer  "
               onClick={MyResume}
             >
               Read Resume
