@@ -1,10 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
+import "./resume.css"
 
 const Skills = () => {
   return (
     <div>
-      <motion.div className="flex flex-col-1 w-full gap-5 ">
+      <motion.div className="skill-container flex flex-col-1 w-full gap-5 lg:justify-center lg:items-cente lg:w-[50%] ">
         <div className=" w-[90%] ">
           <div className="">
             <h2 className="text-xl font-semi-bold ">Development Skills</h2>

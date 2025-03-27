@@ -13,21 +13,21 @@ const Navlist = [
         link: "about"
     },
     {
-        _id: 1004,
+        _id: 1003,
         title: "Projects",
         link: "projects"
   
     },
     {
-        _id: 1003,
+        _id: 1004,
         title: "Resume",
         link: "resume"
     },
     {
         _id: 1005,
         title: "Contacts",
-        link: "contacts"
-    },
+        link: "contact"
+    }
 
 ]
 export default Navlist;

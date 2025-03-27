@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import { Typewriter, Cursor, useTypewriter } from "react-simple-typewriter";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 import Resume from "../../../../public/assets/resume.pdf"
 
 const Home = () => {
@@ -25,17 +25,17 @@ const Home = () => {
     <>
       <section
         id="home"
-        className="Banner_style border-b-[1px] border-b-[gray] "
+        className="Banner_style border-b-[1px] border-b-[gray] sm:my-30 "
       >
         <div className="section_div_1 flex flex-col ">
           <div className="flex flex-col ">
-            <h1 className="text-xl font-bold text-white ">
+            <h1 className="text-xl font-bold text-white sm:text-2xl ">
               Hello i am <br />
               <span className="text-orange-600 capitalize font-logo">
                 Bernard Mutinda
               </span>
             </h1>
-            <h2 className="text-2xl font-bold">
+            <h2 className="text-2xl font-bold sm:text-4xl sm:font-semibold ">
               a <span>{text}</span>
               <Cursor
                 cursorBlinking={true}
@@ -43,7 +43,7 @@ const Home = () => {
                 cursorColor={"#0000ff"}
               />
             </h2>
-            <p className=" flex text-sm ">
+            <p className=" flex text-sm sm:text-lg md:grid grid-cols-2 ">
               A proefficient software developer using Javascript, TypeScript,
               Python, Php, Tailwindcss and Framer Motion. Commited to excelence
               and delivering creative problem-solving solutions. Currently open
@@ -52,7 +52,7 @@ const Home = () => {
           </div>
           <div className="home-footer">
             <button
-              className="bg-orange-600 rounded-sm text-sm  hover:bg-gray-700 duration-500 hover:cursor-pointer  "
+              className="bg-orange-600 rounded-sm text-md  hover:bg-gray-700 duration-500 hover:cursor-pointer "
               onClick={MyResume}
             >
               Read Resume
