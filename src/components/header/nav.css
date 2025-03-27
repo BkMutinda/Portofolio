@@ -15,6 +15,6 @@
         display: block;
     }
     .nav_menu ul{
-        @apply block gap10 right-0
+        @apply block  right-0
     }
 }
