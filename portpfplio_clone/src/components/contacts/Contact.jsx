@@ -1,6 +1,7 @@
 import React from "react";
 import Tittle from "../layouts/Tittle";
 import "./contact.css";
+import Footer from "../contacts/footer/Footer";
 
 const Contact = () => {
   const onSubmit = async (event) => {
@@ -20,31 +21,21 @@ const Contact = () => {
       },
       body: json,
     }).then((res) => res.json());
-
-    if (res.success) {
-      // alert("Message sent successfully");
-      // console.log("Success", res);
-    }
   };
 
-
-
-
   return (
-    <section id="contacts  ">
-      <div className="flex flex-col ">
-        <div className="justify-center flex  items-center text-center  ">
-          <Tittle des="Contact Me" />
-        </div>
-        <div className="w-full  ">
-          <div className="flex flex-wrap ">
+    <>
+      <section id="contact" className=" border-b-2 border-gray-700 ">
+        <div className="flex flex-col ">
+          <div className="justify-center flex  items-center text-center  ">
+            <Tittle des="Contact Me" />
+          </div>
+          <div className="w-full  ">
+            <div className="grid grid-cols-1 sm:grid sm:grid-cols-2">
               <div className=" text-sm flex justify-center items-center text-center   ">
-                <p className="contact-p   ">
-                Your feedback is a appreciated.
-                </p>
-
+                <p className="contact-p   ">Your feedback is a appreciated.</p>
               </div>
-            <div className=" ">
+              <div className=" ">
                 <form
                   action="https://api.web3forms.com/submit"
                   method="POST"
@@ -92,10 +83,12 @@ const Contact = () => {
                   </button>
                 </form>
               </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+        <Footer />
+      </section>
+    </>
   );
 };
 

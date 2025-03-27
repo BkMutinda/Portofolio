@@ -1,36 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 
-@theme{
-    --font-logo: Caveat "sans-serif";
-
+@theme {
+  --font-logo: Caveat "sans-serif";
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-
 
 input,
-textarea{
-    padding: 0px 5px;
+textarea {
+  padding: 0px 5px;
 }
-textarea{
-    padding-top: 5px;
-    font-family: cursive;
+textarea {
+  padding-top: 5px;
+  font-family: cursive;
 }
-button{
-    width: fit-content;
-    padding: 3px 15px;
+button {
+  width: fit-content;
+  padding: 3px 15px;
+  margin-bottom: 20px;
 }
 .mail,
 .phone,
-.location{
-    margin-top: 5px;
+.location {
+  margin-top: 5px;
 }
-li{
-    margin-top: 10px;
+li {
+  margin-top: 10px;
 }
-span{
-    margin-left: 5px;
+span {
+  margin-left: 5px;
 }

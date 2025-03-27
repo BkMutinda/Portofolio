@@ -13,7 +13,7 @@ const SideMenu = ({ closeSideBar }) => {
         initial={{ x: "50%", opacity: 0 }}
         animate={{ x: "0", opacity: 1 }}
         transition={{ duration: 0.4, delay: 0.2 }}
-        className="side-menu-container inline-block bg-gray-600  w-[200px]  "
+        className="side-menu-container inline-block bg-gray-600  w-[200px] w-max-[520px] "
       >
         <motion.p className="text-3xl hover:cursor-pointer  ">
           <FaX

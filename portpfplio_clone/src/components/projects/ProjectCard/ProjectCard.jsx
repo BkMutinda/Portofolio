@@ -19,12 +19,16 @@ const ProjectCard = ({ tittle, des, src }) => {
               {tittle}{" "}
             </h3>
             <div className="project_icons flex justify-center items-center text-center">
-                <span className="flex justify-center items-center h-10 w-10 rounded-sm text-center text-xl text-gray-400 bg-gray-700 hover:cursor-pointer hover:bg-gray-950 duration-300 hover:text-white " > <FaArrowCircleRight/> </span>
+              <span className="flex justify-center items-center h-10 w-10 rounded-sm text-center text-xl text-gray-400 bg-gray-700 hover:cursor-pointer hover:bg-gray-950 duration-300 hover:text-white ">
+                {" "}
+                <FaArrowCircleRight />{" "}
+              </span>
             </div>
-
           </div>
           <div className="Project-footer">
-          <span className="text-secondary  text-sm tracking-wide duration-300 flex justify-items-center text-center " >{des} </span>
+            <span className="text-secondary  text-sm tracking-wide duration-300 flex justify-items-center text-center ">
+              {des}{" "}
+            </span>
           </div>
         </div>
       </div>
