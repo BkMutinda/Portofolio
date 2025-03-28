@@ -13,8 +13,6 @@ const Contact = () => {
     const name = formData.get("name");
     const email = formData.get("email");
 
-    console.log("name:", name , "email:", email );
-
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
