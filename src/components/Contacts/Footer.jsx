@@ -36,23 +36,23 @@ const Footer = () => {
           <div className="footer_info flex justify-center items-center ">
             <ul className="grid grid-cols-3 gap-2 ">
               <li className="h-8  w-8 flex justify-center items-center text-center bg-gray-800 hover:bg-gray-700 rounded-sm hover:translate-y-1 duration-200 hover:cursor-pointer ">
-                <FaLinkedin onClick={MyLinkedIn} />{" "}
+                <FaLinkedin onClick={MyLinkedIn} className="text-2xl" />{" "}
               </li>
-              <li className="h-8  w-8 flex justify-center items-center text-center bg-gray-800 hover:bg-gray-700 rounded-sm hover:translate-y-1 duration-200 hover:cursor-pointer ">
+              <li className="h-10  w-10 flex justify-center items-center text-center bg-gray-800 hover:bg-gray-700 rounded-sm hover:translate-y-1 duration-200 hover:cursor-pointer ">
                 {" "}
-                <FaGithub onClick={MyGIthub} />{" "}
+                <FaGithub onClick={MyGIthub} className="text-2xl" />{" "}
               </li>
-              <li className="h-8  w-8 flex justify-center items-center text-center bg-gray-800 hover:bg-gray-700 rounded-sm hover:translate-y-1 duration-200 hover:cursor-pointer ">
-                <FaFacebook onClick={MyFacebook} />{" "}
+              <li className="h-10  w-10 flex justify-center items-center text-center bg-gray-800 hover:bg-gray-700 rounded-sm hover:translate-y-1 duration-200 hover:cursor-pointer ">
+                <FaFacebook onClick={MyFacebook} className="text-2xl" />{" "}
               </li>
-              <li className=" h-8  w-8 flex justify-center items-center text-center bg-gray-800 rounded-sm ">
-                <FaInstagram />{" "}
+              <li className=" h-10  w-10 flex justify-center items-center text-center bg-gray-800 rounded-sm ">
+                <FaInstagram className="text-2xl" />{" "}
               </li>
-              <li className="h-8  w-8 flex justify-center items-center text-center bg-gray-800 rounded-sm ">
-                <FaXTwitter />{" "}
+              <li className="h-10  w-10 flex justify-center items-center text-center bg-gray-800 rounded-sm ">
+                <FaXTwitter className="text-2xl" />{" "}
               </li>
-              <li className="h-8  w-8 flex justify-center items-center text-center bg-gray-800 hover:bg-gray-700 rounded-sm hover:translate-y-1 duration-200 hover:cursor-pointer ">
-                <BsWhatsapp onClick={MyWhatsApp} />{" "}
+              <li className="h-10  w-10 flex justify-center items-center text-center bg-gray-800 hover:bg-gray-700 rounded-sm hover:translate-y-1 duration-200 hover:cursor-pointer ">
+                <BsWhatsapp onClick={MyWhatsApp} className="text-2xl" />{" "}
               </li>
             </ul>
           </div>
