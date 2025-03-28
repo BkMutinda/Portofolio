@@ -1,5 +1,5 @@
 import React from "react";
-import "./about.css";
+import "./About.css";
 import Tittle from "../../layouts/Tittle.jsx";
 import { FaMobile, FaServer, FaBars, FaPen } from "react-icons/fa";
 import { SiAntdesign, } from "react-icons/si";
