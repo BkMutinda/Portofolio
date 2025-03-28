@@ -1,49 +1,44 @@
 import React from "react";
-import "./About.css";
-import Tittle from "../../layouts/Tittle";
-import { FaMobile, FaServer, FaBars } from "react-icons/fa";
-import { SiAntdesign, SiProgress } from "react-icons/si";
-import { FaComputer } from "react-icons/fa6";
+import "./about.css";
+import Tittle from "../../layouts/Tittle.jsx";
+import { FaMobile, FaServer, FaBars, FaPen } from "react-icons/fa";
+import { SiAntdesign, } from "react-icons/si";
 import Card from "./Card.jsx";
+import { FaMagnifyingGlass } from "react-icons/fa6";
 
 const About = () => {
   return (
     <>
       <section
         id="about"
-        className="about w-full text-White border-b-[1px] border-b-gray-600  "
+        className=" w-full text-White border-b-[1px] border-b-gray-600  "
       >
         <Tittle title="about" des="What i do" />
-        <div className="grid grid-cols-3 gap-20">
+        <div className="grid grid-cols-1 gap-10 sm:grid sm:grid-cols-2 lg:grid lg:grid-cols-3">
           <Card
-            title="Bussiness strategy"
-            des="this is the dexcription of the first box"
-            icon={< FaBars />}
+            title="Fullstack Web-development"
+            des="Versatile Front and Back-end Developer "
+            icon={<FaBars />}
           />
           <Card
             title="Mobile Development"
-            des="this is the dexcription of the first box"
+            des="Android developer"
             icon={<FaMobile />}
           />
           <Card
             title="UI/UX Designer"
-            des="this is the dexcription of the first box"
+            des="UI/UX and Graphic Designer"
             icon={<SiAntdesign />}
           />
           <Card
-            title="Website Hosting"
-            des="this is the dexcription of the first box"
-            icon={<FaServer />}
+            title="Pen-Tester"
+            des="Well Equiped Pen-Tester "
+            icon={<FaMagnifyingGlass />}
           />
           <Card
-            title="SEO "
-            des="this is the dexcription of the first box"
-            icon={<SiProgress />}
-          />
-          <Card
-            title="Cyber Security"
-            des="this is the dexcription of the first box"
-            icon={<FaComputer />}
+            title="Free Lancer (Online Writting) "
+            des="A good Desertaion, Assignments and Essays Writter "
+            icon={<FaPen />}
           />
         </div>
       </section>
@@ -51,4 +46,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default About
