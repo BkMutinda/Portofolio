@@ -7,10 +7,6 @@
     --color-secondary: "#ff6000"
 }
 
-*{
-    margin: 0px;
-    padding:  0px;
-}
 body{
     color: #ffffff;
     background-color: #000005;
