@@ -14,18 +14,18 @@ const Navlist = [
     },
     {
         _id: 1003,
-        title: "Resume",
-        link: "resume"
-    },
-    {
-        _id: 1004,
         title: "Projects",
         link: "projects"
     },
     {
+        _id: 1004,
+        title: "Resume",
+        link: "resume"
+    },
+    {
         _id: 1005,
         title: "Contacts",
-        link: "contacts"
+        link: "contact"
     },
 
 ]

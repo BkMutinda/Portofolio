@@ -1,13 +1,11 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
-}
-.project_info{
-    margin: 10px;
-}
-.project_icons{
+  }
+  
+  .project_icons {
     padding-right: 30px;
-}
-.project_des{
-    margin: 20px;
-}
+  }
+  .Project-footer span {
+    margin: 10px;
+  }
