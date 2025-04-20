@@ -36,13 +36,13 @@ const Contact = () => {
           <div className="w-full  ">
             <div className="grid grid-cols-1 sm:grid sm:grid-cols-2">
               <div className=" text-sm flex justify-center items-center text-center   ">
-                <p className="contact-p   ">Your feedback is a appreciated.</p>
+                <p className="bg-teal-500 py1 px-2 rounded-md  ">Connect with me</p>
               </div>
               <div className=" ">
                 <form
                   action="https://api.web3forms.com/submit"
                   method="POST"
-                  className="contact-form gap-1 flex flex-col  "
+                  className="contact-form gap-1 flex flex-col w-[90%] m-auto  "
                 >
                   <input
                     type="hidden"
@@ -80,7 +80,7 @@ const Contact = () => {
                   ></textarea>
                   <br />
                   <button
-                    className="bg-gray-700 cursor-pointer hover:bg-gray-800 duration-300 rounded-md  "
+                    className="bg-teal-500 cursor-pointer hover:bg-gray-800 duration-300 rounded-md  "
                     type="submit"
                     onSubmit={onSubmit}
                   >

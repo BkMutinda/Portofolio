@@ -1,5 +1,4 @@
-import { RiContactsBook2Line } from "react-icons/ri";
-import "./App.css";
+import React from "react";
 import About from "./components/header/About/About";
 import Home from "./components/header/Home/Home";
 import Nav from "./components/header/Nav";
@@ -9,18 +8,16 @@ import Contact from "./components/Contacts/Contact";
 
 function App() {
   return (
-    <>
-      <div className="">
-        <Nav />
-        <div className="app_style  ">
-          <Home />
-          <About />
-          <Projects />
-          <Resume />
-          <Contact />
-        </div>
+    <div className="">
+      <Nav />
+      <div className="app_style  ">
+        <Home />
+        <About />
+        <Projects />
+        <Resume />
+        <Contact />
       </div>
-    </>
+    </div>
   );
 }
 
