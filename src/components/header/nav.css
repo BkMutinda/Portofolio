@@ -1,0 +1,28 @@
+
+
+.nav_h1{
+    font-family: Caveat;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.bars{
+    margin-right: 10px;
+}
+p{
+    margin-top: 20px;
+    padding: 10px;
+}
+.link-item{
+    padding: 7px;
+}
+.header_container{
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+.side-menu-container{
+    margin-top: 100px;
+}
+.x-mark{
+    margin-top: 50px;
+}
