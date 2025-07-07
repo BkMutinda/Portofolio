@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap'); */
 
 @import "tailwindcss";
 
-@theme{
+/* @theme{
     --font-logo: Caveat "sans-serif";
     --color-secondary: "#ff6000"
-}
+} */
 
 body{
     color: #ffffff;

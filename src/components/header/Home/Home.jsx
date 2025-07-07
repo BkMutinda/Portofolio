@@ -8,7 +8,6 @@ const Home = () => {
     words: [
       "Web Developer.",
       "Graphic Designer.",
-      "Mobile Developer.",
       "Cybersecurity Analyst.",
     ],
     loop: true,
